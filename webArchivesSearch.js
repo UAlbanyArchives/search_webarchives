@@ -28,7 +28,7 @@ $(".pageNext").click(function(e) {
 	  getResults(query, 0);
 	});
 
-// Returns results from ArchivesSpace for a query search
+// Returns results from Archive-It for a query search
 function getResults(query, page) {
 	if (page == 0){
 		urlPath = "https://archive-it.org/seam/resource/opensearch?i=6372&i=3308&i=6914&i=7081&i=3308&i=6917&i=3308&i=7802&i=6915&i=6918&i=5967&i=7082&i=7801&i=6916&i=8702&i=6913&i=8098&q=" + query
