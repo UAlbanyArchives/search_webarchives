@@ -1,0 +1,53 @@
+.webSearchPage {
+	min-height: 350px;
+}
+
+#webArchivesSearch .form-group  {
+	text-align: center;
+}
+
+#webArchivesSearch .form-group .form-control {
+	display: inline;
+}
+
+#results {
+	text-align: center;
+}
+
+#results .panel * {
+	text-align: left;
+}
+
+#results img {
+	margin: 0 auto;
+	width: 20%;
+}
+
+#results h4 {
+	text-align: left;
+}
+
+#results p {
+	font-size: 14px;
+}
+
+#results img {
+	margin: 0 auto;
+}
+
+.liveLink {
+	font-size: 11px;
+}
+
+#results #pagination a {
+	cursor: pointer;
+}
+
+#results #pagination .pageLink {
+	margin: 10px 6px;
+	font-size: 18px;
+}
+
+#results #pagination * {
+	float: left;
+}
