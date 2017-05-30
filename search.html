@@ -2,29 +2,115 @@
 <html>
 	<head>
 		<title>Search Web Archives</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
-		<link rel="stylesheet" href="search.css"></link>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="search.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="webArchivesSearch.js"></script>
 	</head>
 	<body>
 		<div class="col-xs-8 col-xs-offset-2">
-			<h1>Web Archives Search</h1>
-			<div class="col-xs-12">
-				<form class="form-inline" id="webArchivesSearch">
-					<div class="form-group col-xs-12">
-						<input class="form-control input-lg" id="exampleInputName2" placeholder="Search Web Archives" type="text">
-							<button class="btn btn-primary input-lg" disabled="" onclick="ga('send', 'event', 'search', 'click', 'button');" type="submit">Search</button>
-						</input>
+			<h2>UAlbany Web Archiving Program</h2>
+			<div class="row">
+				<div class="col-md-5" id="search-options">
+					<form role="form">
+						<div class="checkbox checkbox-primary">
+							<input type="checkbox" class="styled" id="checkbox1" value="3308" checked />
+							<label for="checkbox1">Website of the University at Albany, SUNY</label>
+						</div>
+						<div class="checkbox checkbox-primary">
+							<input type="checkbox" class="styled" id="checkbox2" value="5967" checked />
+							<label for="checkbox2">UAlbany News</label>
+						</div>
+						<div class="checkbox checkbox-primary">
+							<input type="checkbox" class="styled" id="checkbox3" value="6372" checked />
+							<label for="checkbox3">Albany Student Press</label>
+						</div>
+						<div class="checkbox checkbox-primary">
+							<input type="checkbox" class="styled" id="checkbox4" value="6916" checked />
+							<label for="checkbox4">Business Council of New York State</label>
+						</div>
+						<div class="checkbox checkbox-primary">
+							<input type="checkbox" class="styled" id="checkbox5" value="6915" checked />
+							<label for="checkbox5">CSEA</label>
+						</div>
+						<div class="checkbox checkbox-primary">
+							<input type="checkbox" class="styled" id="checkbox6" value="7802" checked />
+							<label for="checkbox6">Environmental Advocates of New York</label>
+						</div>
+						<div class="checkbox checkbox-primary">
+							<input type="checkbox" class="styled" id="checkbox7" value="7081" checked />
+							<label for="checkbox7">New York Civil Liberties Union </label>
+						</div>
+						<div class="checkbox checkbox-primary">
+							<input type="checkbox" class="styled" id="checkbox8" value="7801" checked />
+							<label for="checkbox8">Parks & Trails New York</label>
+						</div>
+						<div class="checkbox checkbox-primary">
+							<input type="checkbox" class="styled" id="checkbox9" value="7802" checked />
+							<label for="checkbox9">Pride Center of the Capital Region</label>
+						</div>
+						<div class="checkbox checkbox-primary">
+							<input type="checkbox" class="styled" id="checkbox10" value="6917" checked />
+							<label for="checkbox10">Senator Kristen Gillibrand</label>
+						</div>
+						<div class="checkbox checkbox-primary">
+							<input type="checkbox" class="styled" id="checkbox11" value="6918" checked />
+							<label for="checkbox11">Senator Chuck Schumer</label>
+						</div>
+						<div class="checkbox checkbox-primary">
+							<input type="checkbox" class="styled" id="checkbox12" value="6913" checked />
+							<label for="checkbox12">United University Professions (UUP)</label>
+						</div>
+						<div class="checkbox checkbox-primary">
+							<input type="checkbox" class="styled" id="checkbox13" value="6914" checked />
+							<label for="checkbox13">WAMC</label>
+						</div>
+						<div class="checkbox checkbox-primary">
+							<input type="checkbox" class="styled" id="checkbox14" value="8702" checked />
+							<label for="checkbox14">98 Acres in Albany</label>
+						</div>
+					</form>
+				</div>
+
+				<div class="col-md-7" id="webArchivesBox">
+					<div class="col-xs-12" id="searchHelp">
+						<a id="searchAll" href="#">Search All</a> | <a id="searchNone" href="#">Search None</a>
 					</div>
-				</form>
+					<form class="form-inline" id="webArchivesSearch">
+						<div class="form-group col-xs-12">
+							<input class="form-control input-lg" id="searchInput" placeholder="Search Web Archives" type="text">
+								<button class="btn btn-primary input-lg" disabled="" onclick="ga('send', 'event', 'search', 'click', 'button');" type="submit">
+									<span class="glyphicon glyphicon-search"/>
+								</button>
+							</input>
+						</div>
+					</form>
+
+
+					<div class="col-xs-12">
+						<div class="text-center">
+							<a href="./" class="btn btn-primary">About Web Archives</a>
+						</div>
+					</div>
+
+
+					<div id="loadingArea" class="col-xs-12">
+
+
+					</div>
+
+				</div>
+
 			</div>
 
-			<div class="text-center col-xs-12" id="search-error" style="margin-top:20px;"></div>
+			<div class="row" id="searchRow">
+				<div class="text-center col-xs-12" id="search-error"/>
+			</div>
 
-			<div id="results" class="col-xs-12"></div>
-		</div>
+			<div class="row" id="resultsRow">
+				<div id="results" class="col-xs-12"/>
+			</div>
 	</body>
 </html>

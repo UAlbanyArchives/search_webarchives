@@ -1,17 +1,55 @@
-.webSearchPage {
-	min-height: 350px;
+
+/* Web Archives Search Results */
+.alphaContent {
+	min-height: 450px;
+	padding: 10px !important;
+}
+
+h2 {
+	margin: 40px 40px 20px 40px !important;
+	text-align: center;
+}
+
+#webArchivesBox {
+	margin-top: 20px;
 }
 
 #webArchivesSearch .form-group  {
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 #webArchivesSearch .form-group .form-control {
 	display: inline;
 }
 
+#webArchivesSearch .btn {
+	font-size: 18px;
+	padding: 6px 16px;
+}
+
+#searchHelp {
+	margin:10px;
+}
+
+#loadingArea {
+	text-align: center;
+	padding: 20px;
+}
+
+#searchRow, #resultsRow {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 #results {
 	text-align: center;
+	margin-bottom: 20px;
+}
+
+#results #pagination * {
+	font-size: 16px;
+	text-align: left;
 }
 
 #results .panel * {
@@ -25,6 +63,10 @@
 
 #results h4 {
 	text-align: left;
+}
+
+#results h5 {
+	padding-left:15px;
 }
 
 #results p {
@@ -44,10 +86,27 @@
 }
 
 #results #pagination .pageLink {
-	margin: 10px 6px;
+	margin: 8px 6px;
 	font-size: 18px;
 }
 
 #results #pagination * {
 	float: left;
+}
+
+#results #pagination2 a {
+	cursor: pointer;
+}
+
+#results #pagination2 .pageLink {
+	margin: 8px 6px;
+	font-size: 18px;
+}
+
+#results #pagination2 * {
+	float: left;
+}
+
+#search-options {
+	font-size: 12px;
 }
